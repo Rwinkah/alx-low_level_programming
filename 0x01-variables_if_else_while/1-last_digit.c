@@ -12,11 +12,12 @@
 int main(void)
 {
 	int n;
+	int r;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int r = n % 10;
+	r = n % 10;
 
 	if (r > 5)
 
