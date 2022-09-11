@@ -4,9 +4,12 @@
 
 #include <stdio.h>
 
-/*
- *main function picks a random number and checks
- *if it is positive negative or zero
+/**
+ *main - program entry point
+ *
+ *Description : 'function picks a random number and checks'
+ *
+ *Return: Always 0 (success)
  */
 int main(void)
 {
