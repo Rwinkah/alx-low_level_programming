@@ -1,8 +1,8 @@
-#include < stdlib.h >
+#include <stdlib.h>
 
-#include < time.h >
+#include <time.h>
 
-#include < stdio.h >
+#include <stdio.h>
 
 /*
  *main function picks a random number and checks
