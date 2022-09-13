@@ -1,7 +1,5 @@
 #include <stdio.h>
-/**
-* main - entry point
-*
+/**main - entry point*
 * Description - "alphabet program"
 *
 * Return: Always 0
@@ -18,6 +16,6 @@ for (c = 'a'; c <= 'z'; ++c)
 {
 		putchar(c);
 }
-
+putchar('\n');
 return (0);
 }
