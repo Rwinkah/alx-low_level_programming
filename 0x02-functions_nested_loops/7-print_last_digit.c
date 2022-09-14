@@ -10,8 +10,8 @@
 * Return: "success = 0"
 **/
 int print_last_digit(int c)
-int d;
 {
+int d;
 if (c > 0)
 {
 c = c;
