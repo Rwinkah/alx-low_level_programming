@@ -2,28 +2,54 @@
 /**
 * main - entry point
 *
-* Description - "print numbers from 0-9"
+* Description - "print numbers from 0-89 removing repetitive occurences"
 *
 * Return: Always 0
 **/
 int main(void)
 {
 int c;
+int d;
+int e;
 
-for (c = 0; c < 90; ++c)
+    for (c = 0; c < 90; ++c)
 {
-	putchar('0' + (c / 10));
-	putchar('0' + (c % 10));
-	if (c < 90)
+    int d = c / 10;
+    int e = c % 10;
+    
+    if (d  == e)
+    {
+        continue;
+    }
+    else
+    {
+        if (d > e){
+            continue;
+        }
+        else {
+            putchar('0' + d);
+            putchar('0' + e);
+
+        }
+    }
+    
+    
+            
+        
+    if (c < 90)
 {
-	putchar(44);
-	putchar(32);
+        putchar(44);
+        putchar(32);
 }
-else
-{
-break;
+    else
+    {
+    break;
+    }
+
+
+
 }
-}
-putchar('\n');
+putchar(10);
 return (0);
 }
+
