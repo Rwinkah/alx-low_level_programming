@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _islower - entry poiny
+* _isalpha - entry poiny
 *
 * Description: "check for lowercase letters"
 *
