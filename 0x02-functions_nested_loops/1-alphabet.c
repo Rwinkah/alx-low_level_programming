@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - entry poiny
+* print_alphabet - entry point
 *
 * Description: "output string"
 *
