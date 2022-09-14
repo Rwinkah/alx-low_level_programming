@@ -10,6 +10,7 @@
 * Return: "success = 0"
 **/
 int print_last_digit(int c)
+int d;
 {
 if (c > 0)
 {
@@ -19,7 +20,6 @@ else
 {
 c = c *-1;
 }
-int d;
 d = c % 10;
 _putchar ('0' + d);
 return (d);
