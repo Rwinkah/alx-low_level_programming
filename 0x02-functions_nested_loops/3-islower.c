@@ -10,14 +10,8 @@
 
 int _islower(int c)
 {
-int r;
-r = islower(c);
-if (r == 0)
-{
-	return (0);
-else
-{
-	return (1);
-}
-
+if (i >= 97 && i <= 122)
+return (1);
+else 
+return (0);
 }
