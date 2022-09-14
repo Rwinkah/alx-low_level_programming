@@ -3,7 +3,7 @@
 /**
 * print_last_digit - entry point
 *
-* Description: "prints lat digit of a number"
+* Description: "prints last digit of a number"
 *
 * @c: "The number to check"
 * 
@@ -12,5 +12,6 @@
 
 int print_last_digit(int c)
 {
-return (c % 10);
+    int d = (c % 10) + 47;
+return (d);
 }
