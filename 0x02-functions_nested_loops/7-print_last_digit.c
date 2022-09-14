@@ -19,5 +19,7 @@ else
 {
 c = c *-1;
 }
-return (c % 10);
+int d = c % 10;
+_putchar ('0' + d);
+return (d);
 }
