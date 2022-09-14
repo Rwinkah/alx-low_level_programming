@@ -3,9 +3,9 @@
 /**
 * print_sign - entry point
 *
-* Description: "check for lowercase letters"
+* Description: "check for number sign"
 *
-* @n: "The letter to check"
+* @n: "The number to check"
 * Return: "success = 0"
 **/
 

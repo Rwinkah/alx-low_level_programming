@@ -3,9 +3,9 @@
 /**
 * _isalpha - entry poiny
 *
-* Description: "check for lowercase letters"
+* Description: "check for alphanumeric characters"
 *
-* @c: "The letter to check"
+* @c: "The character to check"
 * Return: "success = 0"
 **/
 
