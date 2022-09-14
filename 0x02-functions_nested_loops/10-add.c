@@ -12,6 +12,6 @@
 
 int add(int c, int d)
 {
-int sum = c + d;
+int sum = (c + d);
 return (sum);
 }
