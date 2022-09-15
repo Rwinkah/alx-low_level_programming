@@ -32,7 +32,6 @@ _putchar('0' + e);
 _putchar('0' + f);
 _putchar(44);
 _putchar(32);
-_putchar(32);
 }
 }
 _putchar(10);
