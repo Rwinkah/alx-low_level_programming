@@ -21,20 +21,20 @@ int e = d / 10;
 int f = d % 10;
 if (d < 10)
 {
-putchar('0' + f);
-putchar(44);
-putchar(32);
-putchar(32);
+_putchar('0' + f);
+_putchar(44);
+_putchar(32);
+_putchar(32);
 }
 else
 {
-putchar('0' + e);
-putchar('0' + f);
-putchar(44);
-putchar(32);
-putchar(32);
+_putchar('0' + e);
+_putchar('0' + f);
+_putchar(44);
+_putchar(32);
+_putchar(32);
 }
 }
-putchar(10);
+_putchar(10);
 }
 }
