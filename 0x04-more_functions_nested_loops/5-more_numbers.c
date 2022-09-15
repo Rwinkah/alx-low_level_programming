@@ -18,5 +18,4 @@ _putchar('0' + c);
 }
 _putchar(10);
 }
-_putchar(10);
 }
