@@ -58,7 +58,7 @@ else
 if (((k + 1) * i) > 9)
 {
 _putchar(44);
-_putchar(46);
+_putchar(32);
 }
 else
 continue;
@@ -71,7 +71,7 @@ _putchar('0' + f);
 if (k < 9)
 {
 _putchar(44);
-_putchar(46);
+_putchar(32);
 }
 else
 continue;
