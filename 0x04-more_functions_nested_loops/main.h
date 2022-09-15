@@ -9,3 +9,4 @@ int print_last_digit(int);
 void times_table(void);
 void print_times_table(int n);
 void print_numbers(void);
+void print_most_numbers(void);
