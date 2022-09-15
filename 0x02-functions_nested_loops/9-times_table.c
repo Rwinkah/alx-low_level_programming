@@ -26,7 +26,7 @@ _putchar(10);
 /**
 * table - function split because betty is petty
 *
-* @i:  conter 2
+* @i:  counter 2
 *
 * Description: "print times table"
 *
@@ -50,8 +50,8 @@ continue;
 if (((k + 1) * i) <= 9)
 {
 _putchar(44);
-_putchar(46);
-_putchar(46);
+_putchar(32);
+_putchar(32);
 }
 else
 {
