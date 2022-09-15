@@ -22,19 +22,31 @@ int f = d % 10;
 if (d < 10)
 {
 _putchar('0' + f);
+if (d < 9)
+{
 _putchar(44);
 _putchar(32);
 _putchar(32);
 }
 else
 {
+continue;
+}
+}
+else
+{
 _putchar('0' + e);
 _putchar('0' + f);
+if (d < 9)
+{
 _putchar(44);
 _putchar(32);
 }
+else
+{
+continue;
 }
-_putchar(44);
+}
 _putchar(10);
 }
 }
