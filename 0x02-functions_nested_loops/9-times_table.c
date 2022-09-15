@@ -3,6 +3,9 @@
 /**
 * times_table - function using putchar to print
 *
+*@k: param
+*
+*@i: param
 * Description: "print times table"
 *
 * Return: no return
