@@ -3,8 +3,11 @@
 /**
 * more_numbers - entry point
 *
+* Description: "print numbers"
 * Return: none
 **/
+
+void wrap(int);
 void more_numbers(void)
 {
 int c;
@@ -13,16 +16,33 @@ for (i = 0; i < 10; i++)
 {
 for (c = 0; c <= 14; ++c)
 {
+int d = (c / 10);
+int e = (c % 10);
 if (c <= 9)
 {
-_putchar('0' + c);
+wrap(e);
 }
 else
 {
-_putchar('0' + (c / 10));
-_putchar('0' + (c % 10));
+wrap((d));
+wrap((e));
 }
 }
 _putchar(10);
 }
+}
+
+
+/**
+ * wrap - around _putchar
+ * 
+ * Description: abstract putchar
+ * 
+ * Return: void
+ * 
+ * */
+
+void wrap (int n)
+{
+_putchar('0' + n);
 }
