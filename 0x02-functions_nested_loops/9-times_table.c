@@ -3,8 +3,6 @@
 /**
 * times_table - function using putchar to print
 *
-*@k: param
-*
 *@i: param
 * Description: "print times table"
 *
@@ -13,14 +11,13 @@
 **/
 
 
-void table(int k, int i);
+void table(int i);
 void times_table(void)
 {
 int i;
 for (i = 0; i < 10; i++)
 {
-int k;
-table(k, i);
+table(i);
 _putchar(10);
 }
 }
@@ -28,8 +25,6 @@ _putchar(10);
 
 /**
 * table - function split because betty is petty
-*
-* @k:  counter 1
 *
 * @i:  conter 2
 *
@@ -39,8 +34,9 @@ _putchar(10);
 *
 **/
 
-void table(int k, int i)
+void table(int i)
 {
+int k;
 for (k = 0; k < 10; k++)
 {
 int d = (i * k);
