@@ -16,7 +16,9 @@ for (i = 0; i < 10; i++)
 int k;
 for (k = 0; k < 10; k++)
 {
-int d = (i * k), int e = (d / 10), int f = (d % 10);
+int d = (i * k);
+int e = (d / 10);
+int f = (d % 10);
 if (d < 10)
 {
 _putchar('0' + f);
