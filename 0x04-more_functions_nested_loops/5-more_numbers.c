@@ -35,6 +35,7 @@ _putchar(10);
 
 /**
  * wrap - around _putchar
+ * @n: input
  * 
  * Description: abstract putchar
  * 
