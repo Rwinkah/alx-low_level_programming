@@ -36,14 +36,14 @@ _putchar(10);
 /**
  * wrap - around _putchar
  * @n: input
- * 
+ *
  * Description: abstract putchar
- * 
+ *
  * Return: void
- * 
- * */
+ *
+ **/
 
-void wrap (int n)
+void wrap(n)
 {
 _putchar('0' + n);
 }
