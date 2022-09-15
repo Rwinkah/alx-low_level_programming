@@ -2,7 +2,7 @@
 /**
 * print_most_numbers - entry point
 *
-* Description: "print numbers 0-9 except 2 and 4"
+* Description: "print number 0-9 except 2 and 4"
 *
 * Return: none
 **/
