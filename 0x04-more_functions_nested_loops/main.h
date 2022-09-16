@@ -17,3 +17,4 @@ void print_diagonal(int);
 void print_triangle(int size);
 int _isupper(int);
 int _isdigit(int);
+int mul(int, int);
