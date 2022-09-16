@@ -12,9 +12,9 @@ void space(int i, int n);
 
 
 
-void print_triangle(int n)
+void print_triangle(int size)
 {
-if (n <= 0)
+if (size <= 0)
 {
 _putchar(10);
 }
@@ -23,11 +23,11 @@ else
 int i;
 int k;
 
-for (i = 0; i <= n; i++)
+for (i = 0; i <= size; i++)
 {
 if (i == 0)
 continue;
-space(i, n);
+space(i, size);
 for (k = 0; k < i; k++)
 {
 _putchar(35);
