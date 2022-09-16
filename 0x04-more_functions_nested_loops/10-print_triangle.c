@@ -7,7 +7,7 @@ void space(int i, int n);
 *
 * Description: "print triangle"
 *
-* Return: none
+* Return: void
 **/
 
 
@@ -53,8 +53,7 @@ _putchar(10);
 
 void space(int i, int size)
 {
-if (i != 10)
-{
+
 int k;
 for (k = 0; k < (size - i); k++)
 
@@ -62,5 +61,5 @@ for (k = 0; k < (size - i); k++)
 {
 _putchar(32);
 }
-}
+
 }
