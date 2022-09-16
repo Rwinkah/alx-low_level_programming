@@ -27,18 +27,13 @@ for (i = 0; i <= n; i++)
 {
 if (i == 0)
 continue;
-else
-{
 space(i, n);
 for (k = 0; k < i; k++)
 {
-_putchar(32);
+_putchar(35);
 }
 _putchar(10);
 }
-
-}
-
 }
 }
 
@@ -58,13 +53,15 @@ _putchar(10);
 
 void space(int i, int n)
 {
-
 if (i != 10)
 {
 int k;
 for (k = 0; k < (n - i); k++)
+
+
 {
-_putchar(46);
+_putchar(32);
 }
 }
 }
+
