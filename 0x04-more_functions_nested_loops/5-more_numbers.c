@@ -2,12 +2,12 @@
 
 /**
 * more_numbers - entry point
-*
+*@n: input number
 * Description: "print numbers"
 * Return: none
 **/
 
-void wrap(int);
+void wrap(int n);
 void more_numbers(void)
 {
 int c;
@@ -35,6 +35,7 @@ _putchar(10);
 
 /**
  * wrap - around _putchar
+ *
  * @n: input
  *
  * Description: abstract putchar
@@ -42,8 +43,7 @@ _putchar(10);
  * Return: void
  *
  **/
-
-void wrap(n)
+void wrap(int n)
 {
 _putchar('0' + n);
 }
