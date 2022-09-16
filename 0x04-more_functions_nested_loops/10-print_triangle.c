@@ -3,7 +3,7 @@ void space(int i, int n);
 /**
 * print_triangle - entry point
 *
-*@n: input number
+*@size: input number
 *
 * Description: "print triangle"
 *
@@ -41,7 +41,7 @@ _putchar(10);
 /**
 * space - design
 *
-*@n: input number
+*@size: input number
 *
 *@i: count number
 * Description: "print space"
@@ -51,12 +51,12 @@ _putchar(10);
 
 
 
-void space(int i, int n)
+void space(int i, int size)
 {
 if (i != 10)
 {
 int k;
-for (k = 0; k < (n - i); k++)
+for (k = 0; k < (size - i); k++)
 
 
 {
