@@ -1,9 +1,9 @@
 #include "main.h"
-void space(int i, int size);
+void space(int i, int n);
 /**
 * print_triangle - entry point
 *
-*@size: input number
+*@n: input number
 *
 * Description: "print triangle"
 *
@@ -12,9 +12,9 @@ void space(int i, int size);
 
 
 
-void print_triangle(int size)
+void print_triangle(int n)
 {
-if (size <= 0)
+if (n <= 0)
 {
 _putchar(10);
 }
@@ -23,11 +23,11 @@ else
 int i;
 int k;
 
-for (i = 0; i <= size; i++)
+for (i = 0; i <= n; i++)
 {
 if (i == 0)
 continue;
-space(i, size);
+space(i, n);
 for (k = 0; k < i; k++)
 {
 _putchar(35);
@@ -41,7 +41,7 @@ _putchar(10);
 /**
 * space - design
 *
-*@size: input number
+*@n: input number
 *
 *@i: count number
 * Description: "print space"
@@ -51,12 +51,12 @@ _putchar(10);
 
 
 
-void space(int i, int size)
+void space(int i, int n)
 {
 if (i != 10)
 {
 int k;
-for (k = 0; k < (size- i); k++)
+for (k = 0; k < (n - i); k++)
 
 
 {
