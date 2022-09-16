@@ -32,7 +32,7 @@ else
 space(i, n);
 for (k = 0; k < i; k++)
 {
-_putchar(35);
+_putchar(32);
 }
 _putchar(10);
 }
