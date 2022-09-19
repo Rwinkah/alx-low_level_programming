@@ -19,3 +19,4 @@ int _isupper(int);
 int _isdigit(int);
 int mul(int, int);
 void reset_to_98(int *n);
+void swap_int(int *a, int *b);
