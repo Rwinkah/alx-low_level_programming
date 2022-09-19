@@ -4,7 +4,7 @@
 *swap_int - int swap function
 *
 *
-*@a: first variable 
+*@a: first variable
 *@b: second variable
 *
 *Return: void
@@ -17,4 +17,3 @@ int d = *b;
 *b = c;
 *a = d;
 }
-
