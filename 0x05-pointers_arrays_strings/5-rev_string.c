@@ -23,7 +23,7 @@ j++;
 while (j != 0)
 {
 j--;
-s[i] = str[j];
+*s[i] = str[j];
 i++;
 }
 }
