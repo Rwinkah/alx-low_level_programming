@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_rev - print a string in reverse
+* rev_string -  string reverse
 *
 * @s: string pointer to be used
 *
@@ -12,6 +12,8 @@ void print_rev(char *s)
 {
 int j = 0;
 char str[30];
+int i = 0;
+
 while (*s != '\0')
 {
 str[j] = *s;
