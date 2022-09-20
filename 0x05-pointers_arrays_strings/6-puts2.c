@@ -18,13 +18,13 @@ while (*str != '\0')
 cd++;
 }
 
-while ((*str != '\0') && (j < cd ))
+while ((*str != '\0') && (cd > 0 ))
 {
 _putchar(*str);
 
 str++;
 str++;
-j++;
+cd++;
 }
 
 
