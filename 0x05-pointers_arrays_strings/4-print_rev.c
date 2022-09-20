@@ -21,7 +21,6 @@ while (j != 0)
 {
 s--;
 _putchar(*s);
-s--;
 j--;
 }
 
