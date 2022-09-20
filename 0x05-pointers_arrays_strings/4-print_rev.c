@@ -14,14 +14,14 @@ int j = 0;
 while (*s != '\0')
 {
 s++;
-j++
+j++;
 }
 
 while (j > 0)
 {
 _putchar(*s);
 s--;
-j--
+j--;
 }
 
 _putchar(10);
