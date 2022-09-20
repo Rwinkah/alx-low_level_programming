@@ -19,7 +19,7 @@ j++;
 
 while (j != 0)
 {
-s--
+s--;
 _putchar(*s);
 s--;
 j--;
