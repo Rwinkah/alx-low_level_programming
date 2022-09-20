@@ -1,27 +1,24 @@
 #include "main.h"
 
 /**
-* print_rev - print a string in reverse
+*puts2 - print a string in alternation
 *
 * @s: string pointer to be used
 *
 * Return: void
 **/
 
-void print_rev(char *s)
+void puts2(char *str)
 {
 int j = 0;
 while (*s != '\0')
 {
 s++;
 j++;
+j++;
+_putchar(*s);
 }
 
-while (j != 0)
-{
-s--;
-_putchar(*s);
-j--;
 }
 
 _putchar(10);
