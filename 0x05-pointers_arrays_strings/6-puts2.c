@@ -22,7 +22,7 @@ _putchar(*str);
 
 str++;
 str++;
-cd++;
+cd--;
 }
 
 
