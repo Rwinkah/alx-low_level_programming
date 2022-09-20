@@ -16,6 +16,7 @@ while (*str != '\0')
 _putchar(*str);
 
 str++;
+str++;
 j++;
 j++;
 }
