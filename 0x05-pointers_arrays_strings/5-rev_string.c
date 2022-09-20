@@ -20,7 +20,6 @@ str[j] = *s;
 s++;
 j++;
 }
-int i = 0;
 while (j != 0)
 {
 s[i] = str[j];
