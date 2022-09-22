@@ -16,13 +16,11 @@ int j = 0;
 int k;
 while (dest[i] != '\0')
 {
-dest++;
 i++;
 }
 
 while (src[j] != '\0')
 {
-src++;
 j++;
 }
 
