@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _strcat - string concatenation function
 *
@@ -31,6 +30,6 @@ for (k = 0; k <= j; k++)
 {
 dest[i + k] = src[k];
 }
-
+dest[i + k + 1] = '\0';
 return (dest);
 }
