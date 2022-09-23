@@ -6,7 +6,6 @@
 * @dest: destination string
 * @src: source string
 * @n: number of characters
-
 * Return: pointer to destination
 **/
 
