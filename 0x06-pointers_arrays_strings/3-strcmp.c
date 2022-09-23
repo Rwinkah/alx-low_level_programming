@@ -3,11 +3,11 @@
 /**
 * _strcmp - compare two strings using ASCII value of characters
 *
-* 
+*
 * @s1: first string
 * @s2: second string
 *
-* return: int
+* Return: int
 **/
 
 int _strcmp(char *s1, char *s2)
@@ -17,7 +17,7 @@ int i, r;
 if (sizeof(s1) > sizeof(s2))
 r = sizeof(s1);
 
-else 
+else
 r = sizeof(s2);
 
 for (i = 0; i < r; i++)
