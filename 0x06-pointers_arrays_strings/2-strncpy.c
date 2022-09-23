@@ -18,7 +18,7 @@ for (j = 0; (j < n && src[j] != '\0'); j++)
 {
 dest[j] = src[j];
 }
-
+dest[n-1] = '\0';
 return (dest);
 
 }
