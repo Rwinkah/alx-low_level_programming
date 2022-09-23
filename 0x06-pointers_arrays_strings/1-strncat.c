@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strncat - adds n number of characters from src to dest
+* *_strncat - adds n number of characters from src to dest
 *
 * @dest: destination string
 * @src: source string
