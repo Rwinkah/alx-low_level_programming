@@ -14,14 +14,18 @@ void reverse_array(int *a, int n)
 {
 int rev[100], i, j;
 int k = n - 1;
+int l = (sizeof(a) / sizeof(int));
 
 for (i = 0; i <= k; i++)
 {
 rev[i] = a[k - i];
 }
 
-for (j = 0 ; j <= n; j++)
+for (j = 0; j < n; j++)
 {
 a[j] = rev[j];
 }
+
+
 }
+
