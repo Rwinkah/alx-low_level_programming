@@ -3,8 +3,8 @@
 /**
 * _strstr - implementation of strstr function in std library
 *
-*@s: string to parse through
-*@accept: substring of characters to find
+*@haystack: string to parse through
+*@needle: substring of characters to find
 *
 *Return: pointer to the substring
 **/
