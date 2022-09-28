@@ -40,3 +40,4 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *, char *);
 int is_prime_number(int n);
 int _pow_recursion(int n, int y);
+int factorial(int n);
