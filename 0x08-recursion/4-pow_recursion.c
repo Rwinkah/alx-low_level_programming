@@ -1,8 +1,8 @@
 
-/** 
-* pow_recursion - rescursively solve exponentation
+/**
+* _pow_recursion - rescursively solve exponentation
 *
-* @n: number 
+* @n: number
 * @y: exponent
 *
 * Return: int
