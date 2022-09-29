@@ -21,7 +21,7 @@ return (sqr(n, (x + 1)));
 }
 
 /**
-* sqrt_recursion- find square root
+* _sqrt_recursion- find square root
 *
 * @n: number to check
 *
