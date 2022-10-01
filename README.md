@@ -1,1 +1,1 @@
-intro to low level programming with c
+Repository for tasks on low level programming specifically c

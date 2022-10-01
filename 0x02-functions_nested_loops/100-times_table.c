@@ -10,15 +10,17 @@
 * Return: no return
 *
 **/
-
-int condtn(int i, int n)
-void table(int i);
+void hndl2(int, int,int, int);
+void hndle3(int,int,int, int);
+int condtn(int , int);
+void table(int i, int n);
 void print_times_table(int n)
 {
 int i;
-for (i = 0; i < 10; i++)
+for (i = 0; i <= n; i++)
 {
 condtn(i, n);
+
 _putchar(10);
 }
 }
@@ -35,49 +37,37 @@ _putchar(10);
 *
 **/
 
-void table(int i)
+void table(int i, int n)
 {
-int k;
-for (k = 0; k < 10; k++)
-{
-int d = (i * k);
-int e = (d / 10);
-int f = (d % 10);
-if (d < 10)
-{
-_putchar('0' + f);
-if (k == 9)
-continue;
-if (((k + 1) * i) <= 9)
-{
-_putchar(44);
-_putchar(32);
-_putchar(32);
-}
-else
-{
-if (((k + 1) * i) > 9)
-{
-_putchar(44);
-_putchar(32);
-}
-else
-continue;
-}
-}
-else
-{
-_putchar('0' + e);
-_putchar('0' + f);
-if (k < 9)
-{
-_putchar(44);
-_putchar(32);
-}
-else
-continue;
-}
-}
+    int k;
+    for (k=0; k <= n; k++){
+      int  d = k * n;
+      int  e = (k + 1) * n;
+      if (d < 100 && d > 9){
+        hndl2(d, e,n,k);
+      }
+      if (d > 99){
+        hndle3(d, e,n,k);
+      }
+      else{
+        if (n * (k+1) < 10)
+        {
+        _putchar('0' + (d % 10));
+        _putchar(44);
+        _putchar(32);
+        _putchar(32);
+        _putchar(32);
+        }
+        else {
+            _putchar(d % 10);
+            _putchar(44);
+            _putchar(32);
+            _putchar(32);
+        }
+      }
+
+    }
+      k++;
 }
 
 
@@ -93,10 +83,62 @@ continue;
 
 int condtn(int i, int n)
 {
-if ((l > 0) && (l <= 15))
-{
-table(i, n);
+    if (n >0 && n <= 15){
+        table(i,n);
+    }
+    else
+    {
+        return (0);
+    }
 }
-else
-{
-return (1); 
+
+
+void hndl2(int d, int e, int n, int k){
+    _putchar('0' + d);
+    _putchar('0' + e);
+    _putchar('0' + n);
+    _putchar('0' + k);
+    // _putchar('0'+k);
+    // _putchar('0'+n);
+    // if ((k + 1) > n){
+    //     _putchar('0' + (d / 10));
+    //     _putchar('0' +(d % 10));
+    // }
+    // else{
+
+    
+    // if (e < 100){
+    //     _putchar('0' +(d / 10));
+    //     _putchar('0' + (d % 10));
+    //     _putchar(44);
+    //     _putchar(32);
+    //     _putchar(32);
+    // }
+
+    // else{
+    //     _putchar('0' + (d / 10));
+    //     _putchar('0' + (d % 10));
+    //     _putchar(44);
+    //     _putchar(32);
+    // }
+    // }
+}
+
+
+
+void hndle3(int d, int e, int  n, int k){
+    if ((k + 1) > n){
+        _putchar('0' + (d / 100));
+        _putchar('0' + ((d / 10) % 10));
+        _putchar('0' + (d % 10));
+    }
+    else{
+        _putchar('0' + (d/ 100));
+        _putchar('0' +((d / 10) % 10));
+        _putchar('0' + (d % 10));
+        _putchar(44);
+        _putchar(32);
+    }
+    
+    
+}
