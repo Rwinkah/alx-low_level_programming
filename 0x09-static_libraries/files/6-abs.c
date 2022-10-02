@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _islower - entry poiny
+* _abs - entry point
 *
 * Description: "check for lowercase letters"
 *
@@ -9,10 +9,10 @@
 * Return: "success = 0"
 **/
 
-int _islower(int c)
+int _abs(int c)
 {
-if (c >= 97 && c <= 122)
-return (1);
+if (c > 0)
+return (c);
 else
-return (0);
+return (c * -1);
 }
