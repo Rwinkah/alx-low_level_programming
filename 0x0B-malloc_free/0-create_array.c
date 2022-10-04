@@ -24,5 +24,9 @@ for (i = 0; i < size; i++)
 {
 p[i] = c;
 }
+if (*p == '\0')
+{
+return ('\0');
+}
 return (p);
 }
