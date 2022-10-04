@@ -26,7 +26,7 @@ p[i] = c;
 }
 if (p == NULL)
 {
-return ('\0');
+return (NULL);
 }
 return (p);
 }
