@@ -1,0 +1,23 @@
+#include <stdlib.h>
+/**
+* create_array - allocate a memory location
+*
+* @size: size of the memory location
+* @c: char to initialize memory
+*
+* Return: char pointer
+**/
+
+
+char *create_array(unsigned int size, char c)
+{
+char *p;
+unsigned int i;
+p =(char *)malloc(sizeof(char) * size);
+
+for (i = 0; i < size; i++)
+{
+p[i] = c;
+}
+return (p);
+}
