@@ -48,4 +48,4 @@ int _sqrt_recursion(int n);
 char *_strcpy(char *dest, char *src, int n);
 int _atoi (char *s);
 char *create_array(unsigned int size, char c);
-
+char *_strdup(char *str);
