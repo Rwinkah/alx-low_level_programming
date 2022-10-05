@@ -16,7 +16,7 @@ int **ip;
 
 if (width < 1 || height < 1)
 return (NULL);
-ip = malloc(height * sizeof(int *));
+ip = malloc(height * sizeof(*ip));
 if (ip == NULL)
 {
 free(ip);
@@ -25,10 +25,11 @@ return (NULL);
 
 for (i = 0; i < height; i++)
 {
-ip[i] = malloc(width * sizeof(int **));
+ip[i] = malloc(width * sizeof(**ip));
 if (ip[i] == 0)
 {
 free(ip[i]);
+free(ip);
 return (NULL);
 }
 }
