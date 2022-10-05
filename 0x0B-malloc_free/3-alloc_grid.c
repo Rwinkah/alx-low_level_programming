@@ -14,16 +14,18 @@ int **alloc_grid(int width, int height)
 int i, j;
 int **ip;
 
-if (width == 0 || height == 0)
-return (0);
-
-ip = malloc(width *sizeof(int*));
-if (ip == 0)
-return (0);
+if (width < 1 || height < 1)
+return (NULL);
+ip = malloc(width * sizeof(int *));
+if (ip == NULL)
+{
+free(ip);
+return (NULL);
+}
 
 for (i = 0; i < width; i++)
 {
-ip[i] = malloc(height *sizeof(int));
+ip[i] = malloc(height * sizeof(int));
 }
 
 for (i = 0; i < width; i++)
@@ -35,4 +37,3 @@ ip[i][j] = 0;
 }
 return (ip);
 }
- 
