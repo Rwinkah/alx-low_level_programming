@@ -9,7 +9,7 @@
 * Return: pointer
 **/
 
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
 {
 int **ip = malloc(width *sizeof(int));
 
