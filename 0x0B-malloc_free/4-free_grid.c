@@ -5,7 +5,7 @@
 *
 * @grid: matrix pointer
 * @height: number of rows
-* 
+*
 * Return: void
 **/
 

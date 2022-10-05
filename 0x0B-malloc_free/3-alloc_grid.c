@@ -28,7 +28,7 @@ for (i = 0; i < height; i++)
 ip[i] = malloc(width * sizeof(**ip));
 if (ip[i] == 0)
 {
-while(i--)
+while (i--)
 {
 free(ip[i]);
 }
