@@ -11,20 +11,21 @@
 
 int **alloc_grid(int width, int height)
 {
-int **ip = malloc(width *sizeof(int));
+int i, j;
+int **ip = malloc(width *sizeof(int*));
 
-for (i = 0; i < 3; i++)
+for (i = 0; i < width; i++)
 {
 ip[i] = malloc(height *sizeof(int));
 }
 
 for (i = 0; i < width; i++)
 {
-for (j = 0; k < height; j++)
+for (j = 0; j < height; j++)
 {
-ipp[i][j] = 0;
+ip[i][j] = 0;
 }
 }
-return (ipp);
+return (ip);
 }
  
