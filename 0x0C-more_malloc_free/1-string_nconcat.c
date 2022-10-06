@@ -25,11 +25,11 @@ s2 = "";
 
 if (n >= sizeof(s2))
 {
-mem = sizeof(s2) + sizeof(s1);
+mem = sizeof(s2) + sizeof(s1) + 1;
 }
 else
 {
-mem = sizeof(s1) + n;
+mem = sizeof(s1) + n + 1;
 }
 p = (char *)malloc(mem);
 if (p == 0)
