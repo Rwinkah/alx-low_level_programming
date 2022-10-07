@@ -29,5 +29,5 @@ for (i = 0; i < sizeof(p); i++)
 mem[i] = 0;
 }
 
-return (mem);
+return (p);
 }
