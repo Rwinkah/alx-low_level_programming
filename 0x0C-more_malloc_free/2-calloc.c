@@ -31,5 +31,3 @@ mem[i] = 0;
 
 return (mem);
 }
-
-
