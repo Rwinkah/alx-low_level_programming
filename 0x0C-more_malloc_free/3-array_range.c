@@ -24,9 +24,9 @@ if (p == 0)
 return (NULL);
 }
 
-for (i = 0; i <= j ; i++, min++)
+for (i = 0; min + i <= max ; i++)
 {
-p[i] = min;
+p[i] = min + i;
 
 }
 
