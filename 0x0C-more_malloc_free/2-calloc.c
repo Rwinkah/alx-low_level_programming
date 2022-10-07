@@ -24,7 +24,7 @@ return (NULL);
 }
 
 mem = p;
-for (i = 0; i < sizeof(p); i++)
+for (i = 0; i < (nmemb * size); i++)
 {
 mem[i] = 0;
 }
