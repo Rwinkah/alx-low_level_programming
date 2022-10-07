@@ -29,11 +29,11 @@ s2 = "";
 
 if (n >= s2l)
 {
-mem = s2l + s1l;
+mem = s2l + s1l + 1;
 }
 else
 {
-mem = s1l + n;
+mem = s1l + n + 1;
 }
 p = (char *)malloc(mem);
 if (p == 0)
