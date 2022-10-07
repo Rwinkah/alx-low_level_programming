@@ -33,7 +33,7 @@ mem = s2l + s1l + 1;
 }
 else
 {
-mem = s1l + n + 1;
+mem = s1l + (n *sizeof(char)) + 1;
 }
 p = (char *)malloc(mem);
 if (p == 0)
@@ -50,6 +50,6 @@ for (j = 0; s2[j] != '\0'; j++)
 {
 p[i + j] = s2[j];
 }
-p[i + j] = '\0';
+p[i + j + 1] = '\0';
 return (p);
 }
