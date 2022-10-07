@@ -1,6 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
 /**
 * string_nconcat - concatenate n bytes from string 2 to string 1
