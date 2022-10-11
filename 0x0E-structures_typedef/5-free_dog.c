@@ -1,3 +1,6 @@
+#include <stdllib.h>
+#include "dog.h"
+
 /**
  * free_dog - free dog struct
  * @d: pointer to the dog
