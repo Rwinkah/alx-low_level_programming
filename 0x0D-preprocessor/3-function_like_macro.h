@@ -1,0 +1,5 @@
+#ifndef ABS__
+#define ABS__
+#define ABS(x) (x < 0 ? (-1 * x) : (x))
+
+#endif /* ABS__ */
