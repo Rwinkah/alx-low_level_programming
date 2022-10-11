@@ -1,4 +1,6 @@
-int _putchar(char c);
+#ifndef MAIN.H
+#define MAIN.H
+(int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
@@ -24,7 +26,7 @@ int _strlen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
 void rev_string(char *s);
-void puts2( char *str);
+void puts2(char *str);
 char *_strcat(char *dest, char *str);
 char *_strncat(char *dest, char *str, int n);
 char *_strncpy(char *dest, char *str, int n);
@@ -46,9 +48,6 @@ void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
 int _sqrt_recursion(int n);
 char *_strcpy(char *dest, char *src, int n);
-int _atoi (char *s);
-char *create_array(unsigned int size, char c);
-char *_strdup(char *str);
-char *str_concat(char *s1, char *s2);
-int **alloc_grid(int width, int height);
-void free_grid(int **grid, int height);
+int _atoi(char *s);
+)
+#endif

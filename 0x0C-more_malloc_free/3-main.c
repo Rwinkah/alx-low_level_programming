@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+#include <string.h>
 
 /**
  * simple_print_buffer - prints buffer in hexa
@@ -10,7 +10,7 @@
  *
  * Return: Nothing.
  */
-void simple_print_buffer(char *buffer, unsigned int size)
+void simple_print_buffer(int *buffer, unsigned int size)
 {
     unsigned int i;
 
@@ -32,21 +32,16 @@ void simple_print_buffer(char *buffer, unsigned int size)
 }
 
 /**
- * main - check the code for ALX School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    char *buffer;
+    int *a;
 
-    buffer = create_array(INT_MAX, 'H');
-    if  (buffer == NULL)
-    {
-        printf("failed to allocate memory\n");
-        return (1);
-    }
-    simple_print_buffer(buffer, INT_MAX);
-    free(buffer);
+    a = array_range(0, 10);
+    simple_print_buffer(a, 11);
+    free(a);
     return (0);
 }
