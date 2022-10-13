@@ -26,6 +26,7 @@ op_ptr = get_op_func(argv[2]);
 
 if (op_ptr == NULL)
 {
+printf("Error\n");
 exit(99);
 }
 
