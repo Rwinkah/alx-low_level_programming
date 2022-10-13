@@ -19,7 +19,7 @@ int (*op_ptr)(int, int);
 if (argc != 4)
 {
 printf("Error\n");
-return (98);
+exit(98);
 }
 
 op_ptr = get_op_func(argv[2]);
