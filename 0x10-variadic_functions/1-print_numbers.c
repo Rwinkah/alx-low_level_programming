@@ -17,10 +17,6 @@ va_list ap;
 unsigned int i;
 va_start(ap, n);
 
-if (n == 0)
-{
-return;
-}
 if (seperator != NULL)
 {
 
