@@ -22,7 +22,7 @@ for (i = 0; i < n; i++)
 p = va_arg(ap, char *);
 if (p)
 {
-printf("%s", p));
+printf("%s", p);
 }
 else
 {
