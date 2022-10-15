@@ -22,7 +22,7 @@ if (seperator != NULL)
 
 for (i = 0; i < n; i++)
 {
-printf("%d%s", va_arg(ap, int), seperator);
+printf("%d%s", va_arg(ap, unsigned int), seperator);
 }
 }
 
