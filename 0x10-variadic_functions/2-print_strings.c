@@ -29,7 +29,7 @@ else
 printf("(nil)");
 }
 
-if ((i < n - 1) && seperator)
+if ((i < n - 1) && separator)
 {
 printf("%s", separator);
 }
