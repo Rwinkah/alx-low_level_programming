@@ -7,10 +7,10 @@
  **/
 
 
-int print_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
 int i = 0;
-list_t *ptr = h;
+const list_t *ptr = h;
 
 
 while (ptr != NULL)
@@ -23,7 +23,7 @@ printf("[%d] %s\n", ptr->len, ptr->str);
 
 else
 {
-printf("[0] (nil)");
+printf("[0] (nil)\n");
 }
 
 ptr = ptr->next;
