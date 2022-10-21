@@ -1,6 +1,30 @@
 #include "lists.h"
 
 
+
+
+
+
+/**
+ * _strlen - count string
+ * @str: pointer
+ *
+ * Return: int
+ **/
+
+int _strlen(const char *str)
+{
+int i = 0;
+while (*str != '\0')
+{
+i++;
+str++;
+}
+return(i);
+}
+
+
+
 /**
  * add_node - add a node to begining
  *
@@ -21,6 +45,7 @@ return (NULL);
 }
 
 temp->next = *head;
+temp->len = _strlen(str);
 temp->str = strdup(str);
 *head = temp;
 
