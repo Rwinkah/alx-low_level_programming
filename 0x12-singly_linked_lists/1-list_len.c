@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * list_len - return the number of elements of a linked list
- * *h: start of the list
+ * @h: start of the list
  *
  * Return: size_t
  **/

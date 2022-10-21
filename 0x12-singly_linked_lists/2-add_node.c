@@ -4,8 +4,8 @@
 /**
  * add_node - add a node to begining
  *
- * @head - double pointer to node
- * @str - strin to initialize
+ * @head: double pointer to node
+ * @str: strin to initialize
  *
  * Return: pointer
  **/

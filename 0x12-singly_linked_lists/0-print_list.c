@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_list - print all elements of a linked list
- * *h: start of the list
+ * @h: start of the list
  *
  * Return: int
  **/
