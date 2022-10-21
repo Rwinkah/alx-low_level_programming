@@ -15,15 +15,15 @@
 
 void free_list(list_t *head)
 {
-list_t *ptr;
-list_t *clear;
 
-ptr = head;
-
-if (ptr->next != NULL)
+if (!head)
 {
-free_list(ptr->next);
+return;
 }
-free(ptr->next);
-free(ptr);
+
+if(head != NULL)
+{
+free_list(head->next);
+}
+free(head->next);
 }
