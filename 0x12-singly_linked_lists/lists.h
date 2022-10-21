@@ -27,4 +27,5 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *h);
 int _strlen(const char *str);
 int _putchar(char c);
+void __attribute__((__constructor__)) premain(void);
 #endif
