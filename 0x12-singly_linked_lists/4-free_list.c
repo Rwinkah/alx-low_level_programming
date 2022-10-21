@@ -19,10 +19,11 @@ list_t *ptr;
 list_t *clear;
 
 ptr = head;
-while (ptr != NULL)
+
+if (ptr->next != NULL)
 {
-clear = ptr;
-ptr = ptr->next;
-free(clear);
+free_list(ptr->next);
 }
+free(ptr->next);
+free(ptr);
 }
