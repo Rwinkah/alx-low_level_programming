@@ -20,7 +20,7 @@ while (*str != '\0')
 i++;
 str++;
 }
-return(i);
+return (i);
 }
 
 

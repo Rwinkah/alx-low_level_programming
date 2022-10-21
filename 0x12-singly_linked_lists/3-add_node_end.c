@@ -1,5 +1,24 @@
 #include "lists.h"
 
+
+/**
+ * _strlen - count string
+ * @str: pointer
+ *
+ * Return: int
+ **/
+
+int _strlen(const char *str)
+{
+int i = 0;
+while (*str != '\0')
+{
+i++;
+str++;
+}
+return (i);
+}
+
 /**
  * add_node_end - add node to end
  *
@@ -10,25 +29,48 @@
  **/
 
 
-list_t *add_node_end(list_t **head, char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *ptr = *head;
-list_t *temp = NULL;
+list_t *ptr;
+list_t *temp;
 
-while (*ptr->next != NULL)
+
+temp = malloc(sizeof(list_t));
+
+if (!temp)
+{
+free(temp);
+return (NULL);
+}
+
+else
+{
+temp->str = strdup(str);
+temp->len = _strlen(str);
+temp->next = NULL;
+}
+
+if (!(*head))
+{
+*head = temp;
+}
+
+else
+{
+ptr = *head;
+
+while (ptr->next)
 {
 ptr = ptr->next;
 }
 
-temp = malloc(sizeof(list_t));
-if (!(temp))
-{
-return (NULL);
-}
-temp->str = strdup(str);
-temp->next = NULL
-
 ptr->next = temp;
-
-return (ptr->next);
 }
+
+return (temp);
+}
+
+
+
+
+
