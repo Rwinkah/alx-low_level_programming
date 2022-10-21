@@ -1,7 +1,8 @@
 #ifndef __MAINH__
 #define __MAINH__
 
-
+#include "stdlib.h"
+#include "stdio.h"
 
 /**
  * struct list_s - single linked list
