@@ -10,7 +10,16 @@
 
 int pop_listint(listint_t **head)
 {
-int answer = (*head)->n;
-free(*head);
-return(answer);
+int answer;
+listint_t *clear;
+
+if (!*head || !head)
+{
+return (0);
+}
+answer = (*head)->n;
+clear = (*head);
+(*head) = (*head)->next;
+free(clear);
+return (answer);
 }
