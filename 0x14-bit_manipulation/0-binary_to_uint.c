@@ -30,5 +30,5 @@ sum += value;
 }
 value *= 2;
 }
-return (sum);;
-} 
+return (sum);
+}
