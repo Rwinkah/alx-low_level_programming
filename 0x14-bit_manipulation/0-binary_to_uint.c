@@ -20,7 +20,7 @@ for (strlen = 0; b[strlen] != '\0'; strlen++)
 i = strlen - 1;
 for (; i >= 0; i--)
 {
-if (b[i] != '0' || b[i] != '1')
+if (b[i] != '0' && b[i] != '1')
 {
 return (0);
 }

@@ -1,5 +1,5 @@
 #ifndef __MAINN__
-#defined __MAIN__
+#define __MAIN__
 
 unsigned int binary_to_uint(const char *b);
 
