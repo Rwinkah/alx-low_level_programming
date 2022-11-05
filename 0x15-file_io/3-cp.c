@@ -73,6 +73,8 @@ int test_condition(char *file_from, char *file_to)
 		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", file_from);
 		exit(98);
 	}
+	if (close(fd) == -1)
+		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd);
 	close(fd);
 
 	fd = open(file_to, O_CREAT | O_APPEND | O_WRONLY | O_TRUNC, 00664);
@@ -81,6 +83,8 @@ int test_condition(char *file_from, char *file_to)
 		dprintf(STDERR_FILENO, "Error: cant't write to %s\n", file_to);
 		exit(99);
 	}
+if (close(fd) == -1)
+		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd);
 	close(fd);
 	return (0);
 }
