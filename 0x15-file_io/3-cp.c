@@ -10,7 +10,7 @@
  **/
 
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int close_from, close_to, read_int = 1024, write_int, file_from, file_to;
 	char buffer[1024];
@@ -50,15 +50,15 @@ void main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", file_to);
 		exit(100);
 	}
-
+	return (0);
 }
 
 
 
-int test_conditions(char *file_from, char *file_to)
+int test_condition(char *file_from, char *file_to)
 {
 	int fd;
-	fd = open(file_from, O_READ);
+	fd = open(file_from, O_RDONLY);
 	if (fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", file_from);
