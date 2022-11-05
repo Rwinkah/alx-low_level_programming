@@ -54,10 +54,19 @@ int main(int argc, char *argv[])
 }
 
 
+/**
+ * test_condition - test for errors
+ * @file_from: file to copy from
+ * @file_to: file to copy to
+ *
+ * Return: int
+ **/
+
 
 int test_condition(char *file_from, char *file_to)
 {
 	int fd;
+
 	fd = open(file_from, O_RDONLY);
 	if (fd == -1)
 	{
@@ -73,5 +82,5 @@ int test_condition(char *file_from, char *file_to)
 		exit(99);
 	}
 	close(fd);
-	return(0);
+	return (0);
 }
