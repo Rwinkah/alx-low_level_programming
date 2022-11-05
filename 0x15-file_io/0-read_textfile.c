@@ -20,8 +20,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buf = malloc(letters);
 
-	if (!filename || !buf)
+	if (!filename || !buf || letters)
 	{
+		close(fd);
 		return (0);
 	}
 	test_read = read(fd, buf, letters);
