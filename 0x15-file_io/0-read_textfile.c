@@ -18,6 +18,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t test_read;
 	ssize_t fd = open(filename, O_RDONLY, 00777);
 
+	if (letters == 0)
+	{
+		close(fd);
+		return (0);
+	} 
 	buf = malloc(letters);
 
 	if (!filename || !buf)
