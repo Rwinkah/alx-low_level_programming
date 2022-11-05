@@ -62,6 +62,7 @@ int test_condition(char *file_from, char *file_to)
 	if (fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", file_from);
+		exit(98);
 	}
 	close(fd);
 
