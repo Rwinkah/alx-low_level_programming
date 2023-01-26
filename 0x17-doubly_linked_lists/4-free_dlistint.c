@@ -8,11 +8,21 @@
  * Return: void
  **/
 
-void _free_dlistint(dlistint_t *list)
+void free_dlistint(dlistint_t *list)
 {
-	if (list)
+	dlistint_t *del;
+
+	if (list == NULL)
+		return;
+
+
+	del = list->next;	
+	while (del != NULL)
 	{
-		_free_dlistint(list->next);
 		free(list);
+		list = del;
+		del = del->next;
 	}
+	free(list);
+
 }
