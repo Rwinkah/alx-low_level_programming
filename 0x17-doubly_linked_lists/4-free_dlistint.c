@@ -8,19 +8,11 @@
  * Return: void
  **/
 
-void free_dlistint(dlistint_t *head)
+void _free_dlistint(dlistint_t *list)
 {
-dlistint_t *tmp;
-
-	if (head != NULL)
-		while (head->prev != NULL)
-			head = head->prev;
-
-	while ((tmp = head) != NULL)
+	if (list)
 	{
-		head = head->next;
-		free(tmp);
-}
-
-free(tmp);
+		_free_dlistint(list->next);
+		free(list);
+	}
 }
