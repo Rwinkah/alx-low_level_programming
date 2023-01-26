@@ -1,28 +1,22 @@
 #include "lists.h"
 
-/**
- * free_dlistint - free all nodes in a doubly linked list
- *
- * @head: head of the list
- *
- * Return: void
- **/
 
-void free_dlistint(dlistint_t *list)
+
+void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *del;
+	dlistint_t *freememory;
 
-	if (list == NULL)
+	if (head == NULL)
 		return;
 
+	freememory = head->next;
 
-	del = list->next;	
-	while (del != NULL)
+	while (freememory != NULL)
 	{
-		free(list);
-		list = del;
-		del = del->next;
+		free(head);
+		head = freememory;
+		freememory = freememory->next;
 	}
-	free(list);
-
+	free(head);
+	free(freememory);
 }
