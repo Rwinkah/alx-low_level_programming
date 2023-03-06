@@ -10,6 +10,8 @@
 
 void free_dlistint(dlistint_t *head)
 {
+	if (head == NULL)
+		return
 	dlistint_t *freememory;
 
 	while (head->prev)
