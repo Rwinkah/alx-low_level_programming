@@ -28,7 +28,7 @@ new->prev = NULL;
 if (temp == NULL)
 {
 *head = new;
-return (*head);
+return (new);
 }
 
 while (temp->prev != NULL)
@@ -39,5 +39,5 @@ new->next = temp;
 temp->prev = new;
 *head = new;
 
-return (*head);
+return (new);
 }
