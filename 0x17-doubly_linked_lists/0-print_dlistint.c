@@ -11,20 +11,17 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 size_t ans = 0;
-const dlistint_t *temp = malloc(sizeof(dlistint_t));
-temp = h;
 
-if (!temp)
+if (!h)
 {
 return (0);
 }
 
-while (temp)
+while (h)
 {
-printf("%d\n", temp->n);
-temp = temp->next;
+printf("%d\n", h->n);
+h = h->next;
 ans++;
 }
-
 return (ans);
 }
