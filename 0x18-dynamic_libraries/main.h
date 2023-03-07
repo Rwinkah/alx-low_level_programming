@@ -1,6 +1,6 @@
 #ifndef MAIN
 #define MAIN
-
+(
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -50,5 +50,5 @@ int _strlen_recursion(char *s);
 int _sqrt_recursion(int n);
 char *_strcpy(char *dest, char *src, int n);
 int _atoi(char *s);
-
+)
 #endif
