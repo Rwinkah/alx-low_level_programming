@@ -1,3 +1,6 @@
+#ifndef __MAINN__
+#define __MAINN__
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,7 +12,7 @@
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the list
  */
-typedef struct has_node_s
+typedef struct hash_node_s
     {
         char *key;
         char *value;
@@ -29,3 +32,4 @@ typedef struct hash_table_s
         hash_node_t **array;
     } hash_table_t;
 hash_table_t *hash_table_create(unsigned long int size);
+#endif
