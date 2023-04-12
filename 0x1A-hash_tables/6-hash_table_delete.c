@@ -4,7 +4,7 @@
  * hash_table_delete - function to delete the hashtable
  *
  * @ht: the head of the hashtable
- * 
+ *
  * Return: void
  **/
 

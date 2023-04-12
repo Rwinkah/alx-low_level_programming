@@ -187,7 +187,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 	{
 		printf("'%s': '%s'", node->key, node->value);
 		node = node->sprev;
-		if (node != NUL)
+		if (node != NULL)
 			printf(", ");
 	}
 	printf("}\n");
