@@ -18,7 +18,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if ((!new_node) || *key == '\0' || (!ht) || (!value) || (!key))
 		return (0);
-	index = key_index(key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
