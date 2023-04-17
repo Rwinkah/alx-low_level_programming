@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * interpolation_search - c implementation of interpolation search algorithm 
+ * interpolation_search - c implementation of interpolation search algorithm
  *
  * @array: array to search in
  *
@@ -9,7 +9,7 @@
  *
  * @value: Value to search for in the array
  *
- * Return: int 
+ * Return: int
  */
 int interpolation_search(int *array, size_t size, int value)
 {
