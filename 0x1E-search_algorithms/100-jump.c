@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * jump_search - c implementation of jump sort 
+ * jump_search - c implementation of jump sort
  *
  * @array: int array to search in
  *
