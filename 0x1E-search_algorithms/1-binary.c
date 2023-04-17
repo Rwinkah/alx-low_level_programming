@@ -8,22 +8,22 @@
  * @size: size of the array
  *
  * @value: value to find in the array
- * 
+ *
  * Return: the index of the element
  **/
 
 int binary_search(int *array, size_t size, int value)
 {
-	size_t start = 0;
-	size_t stop = size - 1;
-	size_t middle = 0;
-	size_t i = 0;
+	int start = 0;
+	int stop = (int) size - 1;
+	int middle = 0;
+	int i = 0;
 
 	if (array != NULL)
 	{
 		while (start <= stop)
 		{
-			middle = (start + stop) / 2;
+			middle = (int) (start + stop) / 2;
 			printf("Searching in array: ");
 			for (i = start; i < stop; i++)
 			{
@@ -39,7 +39,7 @@ int binary_search(int *array, size_t size, int value)
 				stop = middle - 1;
 			}
 			if (array[middle] == value)
-				return middle;
+				return (middle);
 		}
 	}
 	return (-1);
