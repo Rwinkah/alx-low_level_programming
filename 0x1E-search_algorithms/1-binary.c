@@ -1,4 +1,4 @@
-#include "search_algos.c"
+#include "search_algos.h"
 
 /**
  * binary_search - c implementation of binary search algorithm
